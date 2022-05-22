@@ -1,5 +1,7 @@
 {
   "version": "0.1.0",
+  "name": "storybook-react-lib-example",
+  "author": "Ivan ojiambo",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,8 +37,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "storybook-react-example",
-  "author": "Ivan",
   "module": "dist/storybook-react-example.esm.js",
   "size-limit": [
     {
