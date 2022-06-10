@@ -1,4 +1,6 @@
 export enum Variant {
-  primary = 'primary',
-  secondary = 'secondary',
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Danger = 'danger',
+  Success = 'success'
 }

@@ -1,16 +1,25 @@
 import React from 'react';
+import { Variant } from '../../types';
+import { ButtonStyled } from './ButtonStyles';
 
-export interface ButtonProps {
-  label: string;
+export type ButtonProps = {
   onClick?: () => void;
-}
+  children: React.ReactNode;
+  variant: Variant;
+};
 
-export const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ onClick, variant, children }) => {
   const handleOnClick = () => {
     if (typeof onClick === 'function') {
       onClick();
     }
   };
 
-  return <button onClick={handleOnClick}>{label}</button>;
+  return (
+    <ButtonStyled variant={variant} onClick={handleOnClick}>
+      <div>{children}</div>
+    </ButtonStyled>
+  );
 };
+
+export default Button;
