@@ -6,7 +6,7 @@ export interface InputProps {
   onChange?: (value: string) => void;
 }
 
-export const Input = ({ name, value, onChange }: InputProps) => {
+const Input = ({ name, value, onChange }: InputProps) => {
   const [inputValue, setInputValue] = useState(value);
 
   useEffect(() => {
